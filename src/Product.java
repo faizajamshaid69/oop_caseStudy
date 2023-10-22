@@ -1,4 +1,4 @@
-abstract public class Product {
+ public class Product {
         private int product_id;
         private String product_name;
         private double Product_price;
@@ -37,7 +37,7 @@ abstract public class Product {
 
         @Override
         public String toString() {
-                return String.format("%d %s %.2f %d %d", getProduct_id(), getProduct_name(), getProduct_price(), getStock_quantity(),getSalesTax());
+                return String.format("%d %s %.2f %d %.2f", getProduct_id(), getProduct_name(), getProduct_price(), getStock_quantity(),getSalesTax());
         }
 }
 
